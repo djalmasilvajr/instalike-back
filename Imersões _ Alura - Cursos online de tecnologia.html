@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)https://cursos.alura.com.br/imersoes/aulas/publicando-na-google-cloud-configuracao-de-api-e-integracao-com-gemini-c145 -->
+<html lang="pt-BR" data-product="alura"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+
+	
+		
+
+
+
+
+
+
+    
+        
+            
+            <!-- Google Tag Manager -->
+            <script type="text/javascript" async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/mixpanel-2-latest.min.js.download"></script><script type="text/javascript" async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/mixpanel-js-wrapper.js.download"></script><script src="./Imersões _ Alura - Cursos online de tecnologia_files/21748317.js.download" type="text/javascript" id="cookieBanner-21748317" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="21748317" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Imersões _ Alura - Cursos online de tecnologia_files/21748317(1).js.download" type="text/javascript" id="hs-analytics"></script><script src="./Imersões _ Alura - Cursos online de tecnologia_files/web-interactives-embed.js.download" type="text/javascript" id="hubspot-web-interactives-loader" crossorigin="anonymous" data-loader="hs-scriptloader" data-hsjs-portal="21748317" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="./Imersões _ Alura - Cursos online de tecnologia_files/conversations-embed.js.download" type="text/javascript" id="hubspot-messages-loader" data-loader="hs-scriptloader" data-hsjs-portal="21748317" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/OiIKV8DdRsC6DWlZuu25.js.download"></script><script type="text/javascript" async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/23465.js.download"></script><script type="text/javascript" async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/gtqukryqvi.js.download"></script><script type="text/javascript" id="www-widgetapi-script" src="./Imersões _ Alura - Cursos online de tecnologia_files/www-widgetapi.js.download" async=""></script><script async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/qukryqvi.js.download"></script><script>
+                ;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://stape.alura.com.br/qukryqvi.js?st='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayerAlura','NTLWWLR');
+            </script>
+            <!-- End Google Tag Manager -->
+        
+        
+    
+
+
+    <script>
+        let dataLayerAlura = window.dataLayerAlura || [];
+        dataLayerAlura.push({
+            'event': 'virtual_page_view',
+            'page_category': 'Imersões',
+            
+            
+            
+                
+                    
+                        
+                        'user_id':'22158',
+                        'email':'fd4b6275dc223e50c784ec8361eb99071dc56ac6bc3d3fd43d153d9a73e11886',
+                        'type': 'B2C'
+                    
+                    
+                
+            
+        });
+    </script>
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+	
+
+	<title>Imersões | Alura - Cursos online de tecnologia</title>
+
+	<link rel="shortcut icon" href="https://cursos.alura.com.br/assets/images/alura/favicon.ico">
+
+	
+
+	<link href="./Imersões _ Alura - Cursos online de tecnologia_files/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com/">
+	
+
+	
+
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/prettify.9c184279.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/github.754087c4.css">
+
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/base.f643e441.css">
+
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/container.1051fe48.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/header.c4f115a5.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/headerDesktop.4266417f.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/headerNews.cc911c64.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/headerList.71c2fcf4.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/headerUnlogged.1a0f779e.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/footer.a852aa15.css">
+	
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/checkbox.c4121c6c.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/paginator.1d935151.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/profileAvatar.c1c04ab9.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/contentBox.b73ece0c.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/contentBoxWithBanner.8a8b9fb2.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseLogo.37e328c1.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseSectionList.c965aa0f.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/button.a6bc4bfa.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/seeMoreButton.b1d5c079.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/progressBar.f194a6ce.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/progressBall.eb059a2c.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/showOpenAnswerExercise.35da852c.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/showMultipleChoiceAnswerExercise.564704cc.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/card.6e071ea1.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/lightCard.8c63f526.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/cardList.447e11d7.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseCard.2262238d.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/learningGuidePercentageCard.cf406a56.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseCardList.e4ff1685.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/learningGuideCardList.01949667.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseCardBig.3efbae12.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseRateCard.8bc11df1.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/cardCategory.3106730f.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/alert.ec6bb786.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/careerHeader.fdbca180.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/careerCourses.77942983.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/learningStepContentList.1956fc83.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/levelMenu.7a9febf7.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/pointsGraphic.0f3db6d0.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/forumDiscussions.e4dba666.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/forumList.72a95ec0.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/sectionContent.f5ce413c.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/sectionVideo.fe961a3e.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/sectionMenu.f99ff3cf.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/elasticMedia.f91fc855.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/formattedText.e58775de.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/exerciseContent.832eedc0.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/starRating.068da9d2.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/markdownEditor.600de57a.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/styledSelect.597181e1.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/assessment.0162ef24.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/audioPlayer.0a362c88.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/search.1d5ff085.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/banner.01935112.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/bannerDetails.d9eef24d.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/vote.97862edb.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/form.06dd7fe8.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/modal.5da2b30a.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/learningGuideProgresses.4be87b2e.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/learningGuideCard.a20baeba.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/progressTracker.d234ab44.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/courseCard.2262238d.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/companyLayoutCustomization.0d33ce2e.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/breadcrumb.e7a9d8ef.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/topic-breadCrumb.d4b41a33.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/licenseAgreement.19f5fba4.css">
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/alertLicenseCard.4e8bf8c4.css">
+
+	
+    <link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/classPage.3cbcb19f.css">
+    <link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/genericVideo.4767d8de.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Imersões _ Alura - Cursos online de tecnologia_files/css2" rel="stylesheet">
+    <link href="./Imersões _ Alura - Cursos online de tecnologia_files/css2(1)" rel="stylesheet">
+
+    <link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/monokai-theme-hljs.b874d000.css">
+    <link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/chatbot.876cd026.css">
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+	
+
+	<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/dark-mode.5c168009.css">
+
+	
+
+	
+		<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/headerAluraDark.633fb722.css">
+		<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/aluradarkTheme.ef0f7f69.css">
+	
+
+	
+
+	
+		<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/engagementSearch.609cb673.css">
+		<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/engagementMenu.37efc872.css">
+		<link rel="stylesheet" href="./Imersões _ Alura - Cursos online de tecnologia_files/bannerTitleEngagement.36bf4036.css">
+	
+
+	
+
+	
+
+	<!-- Remove cookie banner from hubspot -->
+	<style>
+
+		div#hs-eu-cookie-confirmation {
+			display: none;
+		}
+	</style>
+
+<script async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/hotjar-1638253.js.download"></script><style>
+        @font-face {
+            font-family: 'NotoSans_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-regular.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_medium_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-medium.ttf);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_bold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-bold.woff);
+        }
+
+        @font-face {
+            font-family: 'NotoSans_semibold_online_security'; 
+            src: url(chrome-extension://llbcnfanfmjhpedaedhbcnpgeepdnnok/assets/fonts/noto-sans-semibold.ttf);
+        }
+</style><script async="" src="./Imersões _ Alura - Cursos online de tecnologia_files/modules.86621fa4aeada5bcf025.js.download" charset="utf-8"></script><style id="_goober"> .go2933276541{position:fixed;display:block;width:100%;height:0px;margin:0px;padding:0px;overflow:visible;transform-style:preserve-3d;background:transparent;backface-visibility:hidden;pointer-events:none;left:0px;z-index:9998;}.go2369186930{top:0px;z-index:9999;height:100%;width:100%;}.go1348078617{bottom:0px;}.go2417249464{position:fixed;z-index:9989;}.go3921366393{left:0;bottom:0;}.go3967842156{right:0;bottom:0;}.go613305155{left:0;top:0;}.go471583506{right:0;top:0;}.go3670563033{position:relative;overflow:hidden;display:none;}.go1041095097{display:block;}.go1632949049{position:absolute;pointer-events:none;width:101vw;height:101vh;background:rgba(0,0,0,0.7);opacity:0;z-index:-1;}.go2512015367{z-index:99998;opacity:0.8;visibility:visible;pointer-events:all;cursor:pointer;}.go1432718904{overflow:hidden;}.go812842568{display:block !important;position:static !important;box-sizing:border-box !important;background:transparent !important;border:none;min-height:0px !important;max-height:none !important;margin:0px;padding:0px !important;height:100% !important;width:1px !important;max-width:100% !important;min-width:100% !important;}.go4194603687{z-index:99999;visibility:hidden;position:absolute;inset:50vh auto auto 50%;transform:translate(-50%,-50%);left:50%;top:150%;pointer-events:none;max-height:95%;max-width:95%;}.go4258295619{pointer-events:auto !important;visibility:visible;top:50%;transition:top 0.75s linear(0,0.006,0.023 2.2%,0.096 4.8%,0.532 15.4%,0.72 21%,0.793,0.853 26.7%,0.902,0.941,0.968 36.2%,0.987 39.7%,1 43.7%,1.007 48.3%,1.009 55.3%,1.002 78.2%,1 );}.go456419034{transition:opacity 0.3s ease-in;}.go3128134379{pointer-events:auto !important;visibility:visible !important;max-height:95vh !important;transition:max-height 1s ease-in;}.go494047706{z-index:9999;width:100%;max-height:95%;position:fixed;visibility:hidden;}.go2481764524{z-index:9999;width:100%;max-height:95%;position:fixed;visibility:hidden;bottom:0px;}.go2685733372{visibility:hidden;}.go2985984737{visibility:visible !important;}.go3281949485{pointer-events:auto !important;visibility:visible !important;max-height:95vh !important;transform:none !important;}.go3508454897{z-index:9999;width:100%;max-height:95%;position:fixed;visibility:hidden;transition:transform 1s linear(0,0.006,0.022 2.3%,0.091 5.1%,0.18 7.6%,0.508 16.3%,0.607,0.691,0.762,0.822 28.4%,0.872,0.912 35.1%,0.944 38.9%,0.968 43%,0.985 47.6%,0.996 53.1%,1.001 58.4%,1.003 65.1%,1 );}.go988075951{z-index:9999;position:fixed;left:10px;top:10px;max-height:95vh !important;max-width:95%;visibility:hidden;}.go2699082514{z-index:9999;position:fixed;right:10px;top:10px;max-height:95vh !important;max-width:95%;visibility:hidden;}.go1595992025{z-index:9999;position:fixed;left:10px;bottom:10px;max-height:95vh !important;max-width:95%;visibility:hidden;}.go1222083472{z-index:9999;position:fixed;right:10px;bottom:10px;max-height:95vh !important;max-width:95%;visibility:hidden;}.go722322694{transition:none !important;}.go26732895{cursor:pointer;}.go2083580917{display:flex;justify-content:center;align-items:center;}</style><style type="text/css">html.hs-messages-widget-open.hs-messages-mobile,html.hs-messages-widget-open.hs-messages-mobile body{overflow:hidden!important;position:relative!important}html.hs-messages-widget-open.hs-messages-mobile body{height:100%!important;margin:0!important}#hubspot-messages-iframe-container{display:initial!important;z-index:2147483647;position:fixed!important;bottom:0!important}#hubspot-messages-iframe-container.widget-align-left{left:0!important}#hubspot-messages-iframe-container.widget-align-right{right:0!important}#hubspot-messages-iframe-container.internal{z-index:1016}#hubspot-messages-iframe-container.internal iframe{min-width:108px}#hubspot-messages-iframe-container .hs-shadow-container{display:initial!important;z-index:-1;position:absolute;width:0;height:0;bottom:0;content:""}#hubspot-messages-iframe-container .hs-shadow-container.internal{display:none!important}#hubspot-messages-iframe-container .hs-shadow-container.active{width:400px;height:400px}#hubspot-messages-iframe-container iframe{display:initial!important;width:100%!important;height:100%!important;border:none!important;position:absolute!important;bottom:0!important;right:0!important;background:transparent!important}.hs-drag-handle{position:absolute;bottom:16px;cursor:grab;height:60px;display:none;align-items:center}.hs-drag-handle--right{right:76px}.hs-drag-handle--left{left:76px}.hs-drag-overlay{position:absolute;top:0;left:0;right:0;bottom:0;user-select:none;z-index:999;display:none}</style></head>
+
+<body class=" "><div id="hs-web-interactives-top-push-anchor" class="go3670563033"></div>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/avatarOnError.f8bd8956.js.download"></script>
+
+
+    
+
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+	<iframe src="https://stape.alura.com.br/ns.html?id=GTM-NTLWWLR"
+			height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/courseIconFallback.2167e6e7.js.download"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+
+	
+
+	
+		
+
+		
+
+		
+
+		
+			
+
+
+
+
+
+
+
+
+
+    <header class="menu">
+        
+
+
+
+<section id="headerBusca" class="headerBusca">
+    <div class="container">
+        
+            
+            <a href="https://cursos.alura.com.br/search" aria-label="busca" class="headerBusca-icon headerBusca-icon-mobile --mobile-only" role="button" aria-expanded="false" aria-controls="headerBusca-form">
+                <svg class="headerBusca-icon-svg"><use xlink:href="/assets/images/header/icon-busca.svg#busca"></use></svg>
+            </a>
+            
+            <form action="https://cursos.alura.com.br/search" id="headerBusca-form" class="headerBusca-form headerBusca-form--retratil">
+                <div class="search-input-wrapper search-move-on-desktop" tabindex="0" autofocus="">
+                    <div class="search-input-with-icon">
+                        
+                        <input type="search" class="skipKeyPress headerBusca-form-input" id="headerBusca-campoBusca" name="query" placeholder="O que você quer aprender?" aria-label="Barra de pesquisa para buscar o termo desejado ">
+                        <div class="search-buttons">
+                            <div class="search-button__border">
+                                
+                                <button class="headerBusca-submit search-and-send-data" aria-label="Realizar a pesquisa do termo digitado " type="submit">
+                                    Pesquisar
+                                </button>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        
+    </div>
+</section>
+
+        <div class="menu__topbar --space-container --mobile-only">
+            <button class="menu__toggle-btn"></button>
+        </div>
+
+        <div class="menu__drawer">
+            <div class="menu__logo --desktop-only ">
+                <a href="https://cursos.alura.com.br/dashboard">
+                    <img class="header-logo header-logo-alura" src="./Imersões _ Alura - Cursos online de tecnologia_files/logo-alura.svg" alt="alura">
+                </a>
+                
+
+
+
+
+
+
+
+            </div>
+
+            <div class="menu__profile --space-container">
+                <div class="menu__news">
+                    <div class="profile__avatar-name profile__alert profile--alert">
+                        <img class="profile__avatar" src="./Imersões _ Alura - Cursos online de tecnologia_files/djalmasilvajr.png" alt="Foto de Djalma Gonçalves Silva Junior">
+                        <a href="https://cursos.alura.com.br/imersoes/aulas/publicando-na-google-cloud-configuracao-de-api-e-integracao-com-gemini-c145#" class="profile__edit-avatar"></a>
+                        <p class="profile__info-name --mobile-only">Djalma</p>
+                        <div class="navigation__item --desktop-only">
+                            <button class="navigation__item-name user-name" aria-controls="profile-menu-desktop" aria-expanded="false">Djalma</button>
+                            <ul id="profile-menu-desktop" class="navigation__sublist">
+                                
+
+
+
+
+
+                                    <li class="navigation__subitem subitem">
+                                        <div class="profile__information">
+                                            <div class="profile__information-avatar">
+                                                <img class="profile__avatar" src="./Imersões _ Alura - Cursos online de tecnologia_files/djalmasilvajr.png" alt="Foto de Djalma Gonçalves Silva Junior">
+                                            </div>
+                                            <div class="profile__information-score">
+                                            <span class="menu__score">
+                                                <h4 class="profile__my-score">Minha pontuação</h4>
+                                                
+
+
+
+
+
+
+<a href="https://cursos.alura.com.br/points/djalma-silva-jr" class="points-link header-profile-pontos" data-username="djalma-silva-jr" aria-label="seu total de pontos é 1.5k">
+
+    <div class="levelMenu-header-user-points-xp" aria-hidden="true">
+        <span class="levelMenu-header-user-points-xp-points bootcamp-text-color" data-username="djalma-silva-jr">1.5k</span><span class="levelMenu-header-user-points-xp-name">xp</span>
+    </div>
+
+    
+
+
+
+
+
+
+<div class="pointsGrid pointsGrid--small" aria-label="total de pontos por dia">
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 25/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 26/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 27/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 28/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 29/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 30/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 31/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 01/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 02/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 03/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 04/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 05/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 06/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 07/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 08/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 09/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 10/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 11/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 12/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 13/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 14/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 15/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 16/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 17/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 18/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 19/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 20/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 21/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 22/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 23/11/2024
+			</span>
+		</div>
+	
+</div>
+
+</a>
+                                            </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                
+
+
+
+
+    
+    
+
+    
+    
+
+
+
+    <li class="navigation__subitem subitem --renovation">
+        <img src="./Imersões _ Alura - Cursos online de tecnologia_files/background-luri.svg" class="subitem__icon-luri">
+        <div class="subitem__wrapper_renovation-message">
+            <p class="subitem__renovation-text">Sua matrícula está quase no fim</p>
+            <a href="https://cursos.alura.com.br/user/payments?tab=renovation" class="subitem__link-renovation-btn">Renovar com o plano PRO</a>
+        </div>
+    </li>
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/djalma-silva-jr" class="subitem__link">
+        <div class="subitem__icon --mine"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Perfil &amp; Certificados</h4>
+            <p class="subitem__description">Gerencie seu perfil e acompanhe sua evolução</p>
+        </div>
+    </a>
+</li>
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/my_profile" class="subitem__link">
+        <div class="subitem__icon --edit"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Editar meu perfil</h4>
+        </div>
+    </a>
+</li>
+
+
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/payments" class="subitem__link">
+        <div class="subitem__icon --purchases"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Minha matrícula</h4>
+            <p class="subitem__description">Nota fiscal e detalhes do seu plano</p>
+        </div>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/signout" class="subitem__link">
+        <div class="subitem__icon --logout"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Sair</h4>
+        </div>
+    </a>
+</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+
+
+
+
+
+
+<button aria-label="novidades" class="header-news-button notification-not-seen" aria-controls="headerNews" aria-expanded="false"></button>
+<div id="headerNews" class="header-news header-nav bootcamp-header-dark-theme" aria-hidden="true" tabindex="-1" data-exists-notification="true">
+    
+
+    
+
+        
+
+            <span class="header-news-text bootcamp-text-color">Novidades</span>
+            <ul class="header-news-list">
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/extra/decode/fiap-decode-71-masterclass-teoria-u-recnplay-2024-e-startups-aceleradas--a9486?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Imersões _ Alura - Cursos online de tecnologia_files/step-fiapcast.svg" alt="Ícone de FIAP DECODE #71: Masterclass Teoria U, Rec’n’Play 2024 e startups aceleradas ">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Podcast</span>
+                                <h4 class="news__name bootcamp-text-color-gray">FIAP DECODE #71: Masterclass Teoria U, Rec’n’Play 2024 e startups aceleradas </h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">23 horas atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://www.youtube.com/watch?v=p01JyAD3Cx4?utm_source=gnarus&amp;utm_medium=timeline" target="_blank" tabindex="-1">
+                            <img class="news__icon" src="./Imersões _ Alura - Cursos online de tecnologia_files/step-video.svg" alt="Ícone de Como a IBM está domando a lA de dentro para fora, com Ullisses Caruso">
+                            <div class="news__information">
+                                <span class="news__kind ">Vídeo</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Como a IBM está domando a lA de dentro para fora, com Ullisses Caruso</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">1 dia atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://www.youtube.com/watch?v=yHU7hnlg1cE?utm_source=gnarus&amp;utm_medium=timeline" target="_blank" tabindex="-1">
+                            <img class="news__icon" src="./Imersões _ Alura - Cursos online de tecnologia_files/step-video.svg" alt="Ícone de SPRING do ZERO | As principais dúvidas sobre esse framework">
+                            <div class="news__information">
+                                <span class="news__kind ">Vídeo</span>
+                                <h4 class="news__name bootcamp-text-color-gray">SPRING do ZERO | As principais dúvidas sobre esse framework</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">1 dia atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://www.alura.com.br/artigos/atom-selector-family?utm_source=gnarus&amp;utm_medium=timeline" target="_blank" tabindex="-1">
+                            <img class="news__icon" src="./Imersões _ Alura - Cursos online de tecnologia_files/step-post-alura.svg" alt="Ícone de Controlando múltiplas instâncias dinâmicas com atomFamily e selectorFamily">
+                            <div class="news__information">
+                                <span class="news__kind ">Artigo</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Controlando múltiplas instâncias dinâmicas com atomFamily e selectorFamily</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">2 dias atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+
+                    <li class="news__item header-news-item--highlighted">
+
+                        <a class="header-news-item-link news__link" href="https://cursos.alura.com.br/course/live-coding-construindo-rede-neural-tensorflow-keras?utm_source=gnarus&amp;utm_medium=timeline" target="" tabindex="-1">
+                            <img class="news__icon" src="./Imersões _ Alura - Cursos online de tecnologia_files/live-coding-construindo-rede-neural-tensorflow-keras.svg" alt="Ícone de Live Coding: construindo uma rede neural com Tensorflow Keras">
+                            <div class="news__information">
+                                <span class="news__kind news__kind-course">Curso</span>
+                                <h4 class="news__name bootcamp-text-color-gray">Live Coding: construindo uma rede neural com Tensorflow Keras</h4>
+                                <span class="news__publishedDate bootcamp-text-color-gray">2 dias atrás</span>
+                            </div>
+                        </a>
+                    </li>
+
+                
+            </ul>
+            <a class="header-news-text news__more" href="https://cursos.alura.com.br/explore" tabindex="-1">Ver todas</a>
+        
+
+        
+
+    
+
+</div>
+                <span class="menu__score --mobile-only">
+                <h4 class="profile__my-score">Minha pontuação</h4>
+                
+
+
+
+
+
+
+<a href="https://cursos.alura.com.br/points/djalma-silva-jr" class="points-link header-profile-pontos" data-username="djalma-silva-jr" aria-label="seu total de pontos é 1.5k">
+
+    <div class="levelMenu-header-user-points-xp" aria-hidden="true">
+        <span class="levelMenu-header-user-points-xp-points bootcamp-text-color" data-username="djalma-silva-jr">1.5k</span><span class="levelMenu-header-user-points-xp-name">xp</span>
+    </div>
+
+    
+
+
+
+
+
+
+<div class="pointsGrid pointsGrid--small" aria-label="total de pontos por dia">
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 25/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 26/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 27/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 28/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 29/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 30/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 31/10/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 01/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 02/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 03/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 04/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 05/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 06/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 07/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 08/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 09/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 10/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 11/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 12/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 13/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 14/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 15/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 16/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 17/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 18/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 19/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 20/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 21/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 22/11/2024
+			</span>
+		</div>
+	
+		<div class="pointsGrid-cell pointsGrid-cell--no-score" aria-hidden="true">
+			<span class="pointsGrid-cell-details">
+				
+					
+					
+						não ganhou pontos
+					
+				
+				em 23/11/2024
+			</span>
+		</div>
+	
+</div>
+
+</a>
+            </span>
+            </div>
+
+            <div class="menu__navigation">
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item --desktop-only">
+                            <a href="https://cursos.alura.com.br/dashboard" class="navigation__item-dashboard">Dashboard</a>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <a href="https://cursos.alura.com.br/dashboard" class="navigation__item-dashboard">Home</a>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <a href="https://cursos.alura.com.br/history" class="navigation__item-dashboard">Meus Cursos</a>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <a href="https://cursos.alura.com.br/learning-guide/engagement" class="navigation__item-dashboard">Formações e Planos de Estudos</a>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <a href="https://cursos.alura.com.br/discover" class="navigation__item-dashboard">Descobrir</a>
+                        </li>
+                        <li class="navigation__item">
+                            <button class="navigation__item-name" aria-controls="community-menu" aria-expanded="false">
+                                Comunidade</button>
+                            <ul id="community-menu" class="navigation__sublist">
+                                
+
+
+
+
+
+    <li class="navigation__subitem subitem">
+        <a href="https://discord.com/oauth2/authorize?client_id=1278070632013238334&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fcursos.alura.com.br%2Fdiscord%2Fcallback&amp;scope=email+identify+guilds.join" target="_blank" class="subitem__link">
+            <div class="subitem__icon --discord"></div>
+            <div class="subitem__information">
+                <h4 class="subitem__name">Discord</h4>
+                <p class="subitem__description">Estude com outras pessoas na nossa comunidade no Discord</p>
+            </div>
+        </a>
+    </li>
+
+
+
+    <li class="navigation__subitem subitem">
+        <a href="https://cursos.alura.com.br/forum" class="subitem__link">
+            <div class="subitem__icon --forum"></div>
+            <div class="subitem__information">
+                <h4 class="subitem__name">Fórum</h4>
+                <p class="subitem__description">Interaja, converse e tire dúvidas no nosso fórum</p>
+            </div>
+        </a>
+    </li>
+    <li class="navigation__subitem subitem">
+        <a href="https://cursos.alura.com.br/forum/participacao" class="subitem__link">
+            <div class="subitem__icon --forum-mine"></div>
+            <div class="subitem__information">
+                <h4 class="subitem__name">Minhas interações</h4>
+                <p class="subitem__description">Tópicos que participou no Fórum</p>
+            </div>
+        </a>
+    </li>
+
+
+
+
+
+
+
+    
+
+
+                            </ul>
+                        </li>
+                        <li class="navigation__item --mobile-only">
+                            <button class="navigation__item-name" aria-controls="profile-menu" aria-expanded="false">
+                                Configurações</button>
+                            <ul id="profile-menu" class="navigation__sublist">
+                                
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+
+
+    <li class="navigation__subitem subitem --renovation">
+        <img src="./Imersões _ Alura - Cursos online de tecnologia_files/background-luri.svg" class="subitem__icon-luri">
+        <div class="subitem__wrapper_renovation-message">
+            <p class="subitem__renovation-text">Sua matrícula está quase no fim</p>
+            <a href="https://cursos.alura.com.br/user/payments?tab=renovation" class="subitem__link-renovation-btn">Renovar com o plano PRO</a>
+        </div>
+    </li>
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/djalma-silva-jr" class="subitem__link">
+        <div class="subitem__icon --mine"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Perfil &amp; Certificados</h4>
+            <p class="subitem__description">Gerencie seu perfil e acompanhe sua evolução</p>
+        </div>
+    </a>
+</li>
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/my_profile" class="subitem__link">
+        <div class="subitem__icon --edit"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Editar meu perfil</h4>
+        </div>
+    </a>
+</li>
+
+
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/user/payments" class="subitem__link">
+        <div class="subitem__icon --purchases"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Minha matrícula</h4>
+            <p class="subitem__description">Nota fiscal e detalhes do seu plano</p>
+        </div>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<li class="navigation__subitem subitem">
+    <a href="https://cursos.alura.com.br/signout" class="subitem__link">
+        <div class="subitem__icon --logout"></div>
+        <div class="subitem__information">
+            <h4 class="subitem__name">Sair</h4>
+        </div>
+    </a>
+</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="./Imersões _ Alura - Cursos online de tecnologia_files/menu.d6002fc5.js.download"></script>
+
+		
+
+		
+
+		
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+<section class="main-banner-title" style="">
+    <div class="main-banner-title__container">
+        <h2 class="container__title" style="">Imersões</h2>
+    </div>
+</section>
+	
+	
+
+
+
+
+
+<main class="class-page" data-immersion-class-id="145">
+
+    <div class="class-page__section">
+        <div class="class-page__header">
+            <h2 class="class-page__title class-page-main-title">Imersão Dev Back-End</h2>
+            <h3 class="class-page__subtitle">Publicando na Google Cloud: Configuração de API e Integração com Gemini</h3>
+        </div>
+    </div>
+
+    <div class="class-page__section">
+        
+            
+            
+                <div class="class-page__video" data-user-has-already-seen-the-class="true" data-immersion-class-id="145" data-immersion-class-title="Publicando na Google Cloud: Configuração de API e Integração com Gemini" data-immersion-category-name="Programação" data-immersion-workload="0" data-immersion-name="Imersão Dev Back-End">
+                    <iframe id="145" class="class-page__iframe yt-player" width="560" height="315" src="./Imersões _ Alura - Cursos online de tecnologia_files/-nXhxiymBK4.html" title="[Imersão Dev Back-End] Publicando na Google Cloud: Configuração de API e Integração com Gemini" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" data-gtm-yt-inspected-98449541_523="true"></iframe>
+                </div>
+            
+        
+    </div>
+
+
+    
+    <div class="class-page__section">
+        <div class="class-page__grid">
+            
+                
+                    <a href="https://cursos.alura.com.br/imersoes/aulas/desvendando-apis-e-servidores-c140" class="class-page__link">
+                        <div class="class-page__class-card">
+                            <div class="class-page__class_number">
+                                <div class="class_page__icon">
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/play-button.svg" class="class-page__icon" alt="Ícone de play">
+                                    
+                                        <p class="class_number">Aula 01:</p>
+                                        
+                                    
+                                </div>
+                                <div>
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/checked-green.svg">
+                                </div>
+                            </div>
+                            <p class="class-page__class_title">Desvendando APIs e Servidores</p>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a href="https://cursos.alura.com.br/imersoes/aulas/criando-e-estruturando-sua-primeira-api-com-get-e-banco-de-dados-c141" class="class-page__link">
+                        <div class="class-page__class-card">
+                            <div class="class-page__class_number">
+                                <div class="class_page__icon">
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/play-button.svg" class="class-page__icon" alt="Ícone de play">
+                                    
+                                        <p class="class_number">Aula 02:</p>
+                                        
+                                    
+                                </div>
+                                <div>
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/checked-green.svg">
+                                </div>
+                            </div>
+                            <p class="class-page__class_title">Criando e Estruturando sua Primeira API com GET e Banco de Dados</p>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a href="https://cursos.alura.com.br/imersoes/aulas/conectando-sua-api-ao-mongodb-estrutura-conexao-e-refatoracao-c142" class="class-page__link">
+                        <div class="class-page__class-card">
+                            <div class="class-page__class_number">
+                                <div class="class_page__icon">
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/play-button.svg" class="class-page__icon" alt="Ícone de play">
+                                    
+                                        <p class="class_number">Aula 03:</p>
+                                        
+                                    
+                                </div>
+                                <div>
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/checked-green.svg">
+                                </div>
+                            </div>
+                            <p class="class-page__class_title">Conectando sua API ao MongoDB: Estrutura, Conexão e Refatoração</p>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a href="https://cursos.alura.com.br/imersoes/aulas/implementando-armazenamento-e-upload-de-imagens-c143" class="class-page__link">
+                        <div class="class-page__class-card">
+                            <div class="class-page__class_number">
+                                <div class="class_page__icon">
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/play-button.svg" class="class-page__icon" alt="Ícone de play">
+                                    
+                                        <p class="class_number">Aula 04:</p>
+                                        
+                                    
+                                </div>
+                                <div>
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/checked-green.svg">
+                                </div>
+                            </div>
+                            <p class="class-page__class_title">Implementando Armazenamento e Upload de Imagens</p>
+                        </div>
+                    </a>
+                
+            
+                
+                    <a href="https://cursos.alura.com.br/imersoes/aulas/publicando-na-google-cloud-configuracao-de-api-e-integracao-com-gemini-c145" class="class-page__link">
+                        <div class="class-page__class-card" style="background-color: rgb(43, 222, 253); pointer-events: none;">
+                            <div class="class-page__class_number">
+                                <div class="class_page__icon">
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/play-button.svg" class="class-page__icon" alt="Ícone de play" style="filter: brightness(0);">
+                                    
+                                        <p class="class_number" style="color: black;">Aula 05:</p>
+                                        
+                                    
+                                </div>
+                                <div>
+                                    <img src="./Imersões _ Alura - Cursos online de tecnologia_files/checked-green.svg" style="filter: brightness(0);">
+                                </div>
+                            </div>
+                            <p class="class-page__class_title" style="color: black;">Publicando na Google Cloud: Configuração de API e Integração com Gemini</p>
+                        </div>
+                    </a>
+                
+            
+        </div>
+    </div>
+
+    <div class="class-page__section">
+        <div class="class-page__header">
+            <h2 class="class-page__title class-page-upper">Publicando na Google Cloud: Configuração de API e Integração com Gemini</h2>
+            <h3 class="class-page__subtitle class-page-upper">
+                Participe e vá mais fundo
+            </h3>
+        </div>
+        <div class="class-page__description">
+            <p>Boas-vindas! Chegamos na última aula da <strong>Imersão Dev Back-End</strong>! Está preparado para o seu último mergulho em programação desta edição?</p>
+<ul><li>É importante acessar o Google Gemini por <a href="https://alura.tv/google-gemini" target="_blank" rel="nofollow noopener noreferrer">este link</a> e assistir as aulas pela plataforma para conseguir o seu certificado!</li><li>Gere a sua API Key no Google AI Studo <a href="https://alura.tv/google-gemini-api" target="_blank" rel="nofollow noopener noreferrer">aqui</a>.</li><li>Repositório da aula 05 <a href="https://github.com/guilhermeonrails/5-Vb8nXmJ5Q7kZ" target="_blank" rel="nofollow noopener noreferrer">aqui</a>.</li></ul>
+<div class="description-container clicked">
+	<div class="title-description">
+		<h2>Introdução</h2>
+		<span class="arrow rotated"></span>
+	</div>
+</div>
+<div class="description-text" style="max-height: 390px;">
+	
+<p>Nesta última aula, vamos finalizar o projeto, colocando a lógica de armazenamento de imagens no servidor, integrando o Front-End do projeto e, fazendo o  deploy do back-end na Google Cloud.</p>
+<h1>Nesta aula, você vai:</h1>
+<ul><li>Fazer a lógica de armazenamento de imagens no servidor;</li><li>Criar a rota PUT para atualização de post;</li><li>Integrar com o Frontend;</li><li>Integrar com a API do Gemini;</li><li>Fazer o deploy do back-end na Google Cloud.</li></ul>
+<h1>Link do projeto:</h1>
+<ul><li>Repositório da aula 05 <a href="https://github.com/guilhermeonrails/5-Vb8nXmJ5Q7kZ" target="_blank" rel="nofollow noopener noreferrer">aqui</a></li><li><a href="https://github.com/alura-cursos/imersao-backend-gemini-2024-front/archive/refs/heads/main.zip" target="_blank" rel="nofollow noopener noreferrer">Integração do Front-End com o Back-End</a></li><li><a href="https://raw.githubusercontent.com/guilhermeonrails/backend-instabytes/refs/heads/aula_5/src/services/geminiService.js" target="_blank" rel="nofollow noopener noreferrer">Código pronto do serviço do Gemini</a></li><li><a href="https://raw.githubusercontent.com/guilhermeonrails/backend-instabytes/refs/heads/aula_5/services.sh" target="_blank" rel="nofollow noopener noreferrer">Código Service .sh</a></li></ul>
+
+</div>
+
+<div class="description-container clicked">
+	<div class="title-description">
+		<h2>Links importantes para você acompanhar a aula</h2>
+		<span class="arrow rotated"></span>
+	</div>
+</div>
+<div class="description-text" style="max-height: 192px;">
+	
+<ul><li>Acesse o Google Gemini <a href="https://alura.tv/google-gemini" target="_blank" rel="nofollow noopener noreferrer">aqui</a></li><li>Gere a sua API Key no Google AI Studo <a href="https://alura.tv/google-gemini-api" target="_blank" rel="nofollow noopener noreferrer">aqui</a>.</li><li><a href="https://grupoalura.notion.site/imersao-dev-back-end-guia-de-mergulho" target="_blank" rel="nofollow noopener noreferrer">Guia de Mergulho da Imersão Dev Back-End!</a></li><li><a href="https://discord.gg/86zUvgfRjN" target="_blank" rel="nofollow noopener noreferrer">Acesse o Discord</a></li><li>Live 25/11 às 18h30 | <a href="https://www.youtube.com/watch?v=clfwxY3Kfss" target="_blank" rel="nofollow noopener noreferrer">Do Código ao Mercado: O Futuro da Sua Carreira em Tecnologia</a></li><li><a href="https://www.npmjs.com/package/dotenv" target="_blank" rel="nofollow noopener noreferrer">Npm | dotenv</a></li><li><a href="https://cloud.google.com/docs?hl=pt-br" target="_blank" rel="nofollow noopener noreferrer">Documentação Google Cloud</a></li></ul>
+
+</div>
+
+<div class="description-container clicked">
+	<div class="title-description">
+		<h2>Ative seus créditos da Google Cloud</h2>
+		<span class="arrow rotated"></span>
+	</div>
+</div>
+<div class="description-text" style="max-height: 241px;">
+	
+<h1>Siga o passo a passo abaixo:</h1>
+<ol><li>Acesse <a href="http://goo.gle/geminidevbackend" target="_blank" rel="nofollow noopener noreferrer">este link</a>.</li><li><strong>Faça login:</strong> Utilize o endereço de e-mail @Gmail.com que colocou no formulário. Você será redirecionado para uma nova página em que você terá que clicar no seguinte botão: <em><strong>"Click here to access your credits".</strong></em></li><li>Conclua o cadastro: Na próxima página, você verá que o código do cupom já está preenchido. Caso seja necessário, adicione as informações solicitadas e clique em <em><strong>"Aceitar e Continuar".</strong></em></li></ol>
+<p><strong>Pronto!</strong> Agora você já pode usar a plataforma Google Cloud para você colocar seu projeto e fazer seus testes!</p>
+
+</div>
+
+<div class="description-container clicked">
+	<div class="title-description">
+		<h2>Mergulhe mais profundo</h2>
+		<span class="arrow rotated"></span>
+	</div>
+</div>
+<div class="description-text" style="max-height: 139px;">
+	
+<h1>Aprofunde-se nos seguintes tópicos:</h1>
+<ul><li><a href="https://www.alura.com.br/artigos/como-resolver-erro-de-cross-origin-resource-sharing" target="_blank" rel="noopener noreferrer">O que é CORS</a></li><li><a href="https://www.alura.com.br/artigos/o-que-e-git-github" target="_blank" rel="noopener noreferrer">Subindo projeto para o GitHub</a></li></ul>
+<ul><li><a href="https://www.alura.com.br/artigos/escrever-bom-readme" target="_blank" rel="noopener noreferrer">Escrevendo um README no seu GitHub</a></li></ul>
+
+</div>
+
+<div class="description-container clicked">
+	<div class="title-description">
+		<h2>Compartilhe o seu projeto</h2>
+		<span class="arrow rotated"></span>
+	</div>
+</div>
+<div class="description-text" style="max-height: 134px;">
+	
+<h1>Divulgue a evolução do seu projeto</h1>
+<p>Mostre a evolução do seu projeto para o mundo compartilhando no LinkedIn e Instagram! Marque a Alura (@AluraOnline) e o Google (@GoogleBrasil). Vamos adorar ver os seus projetos e acompanhar a sua evolução! Lembre-se de utilizar a hashtag <strong>#Imersao-Back-End-Google-Gemini</strong> para que o seu projeto alcance ainda mais pessoas.</p>
+
+</div>
+
+        </div>
+    </div>
+
+    <div class="class-page__section">
+        <div class="class-page__header">
+            <h2 class="class-page__title class-page-upper">
+                Quem são os mergulhadores?
+            </h2>
+            <h3 class="class-page__subtitle class-page-upper">
+                Instrutores e Instrutoras da Alura nessa imersão
+            </h3>
+        </div>
+        <div class="class-page-image-logo"></div>
+        <div class="class-page__instructors">
+            
+                <div class="class-page__instructor">
+                    <h4 class="instructor__name">Juliana Amoasei</h4>
+                    <span class="instructor__bio">instrutora JS @ Alura</span>
+                    <div class="instructor__socials">
+                        
+                            <a href="https://twitter.com/aquijuz" target="_blank" class="instructor__twitter"></a>
+                        
+                        
+                        
+                            <a href="https://github.com/JulianaAmoasei" target="_blank" class="instructor__github"></a>
+                        
+                    </div>
+                </div>
+            
+                <div class="class-page__instructor">
+                    <h4 class="instructor__name">André David</h4>
+                    <span class="instructor__bio">Professor e Coordenador FIAP</span>
+                    <div class="instructor__socials">
+                        
+                        
+                            <a href="https://www.linkedin.com/in/andrefdavid/" target="_blank" class="instructor__linkedin"></a>
+                        
+                        
+                    </div>
+                </div>
+            
+                <div class="class-page__instructor">
+                    <h4 class="instructor__name">Guilherme Lima</h4>
+                    <span class="instructor__bio">Tech Educator e Professor na Alura e na USP</span>
+                    <div class="instructor__socials">
+                        
+                        
+                            <a href="https://www.linkedin.com/in/guilherme-lima-developer/" target="_blank" class="instructor__linkedin"></a>
+                        
+                        
+                            <a href="https://github.com/guilhermeonrails" target="_blank" class="instructor__github"></a>
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+    <div class="class-page__section">
+        <div class="class-page__header">
+            <h2 class="class-page__title class-page-upper">
+                Lives desta imersão!
+            </h2>
+            <h3 class="class-page__subtitle class-page-upper">
+                Reveja tudo que aconteceu durante as lives
+            </h3>
+        </div>
+        <div class="class-page__lives">
+            
+                <a href="https://youtube.com/live/wzNYtHI6JWo" class="class-page__live-card">
+                    <div class="live-video">
+                        <img class="live-video__image" src="./Imersões _ Alura - Cursos online de tecnologia_files/0.jpg" alt="Live Thumbnail">
+                        <span class="live-video__type">Live no ar</span>
+                        <h3 class="live-video__name">[Imersão Dev Back-End] Live de Abertura + Tire suas dúvidas Ao vivo</h3>
+                    </div>
+                </a>
+            
+        </div>
+    </div>
+
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+<aside id="chatbot" class="chatbot-resizable animate" style="z-index: 100">
+    <div class="chatbot-cta">
+        <div class="chatbot-tooltip">E aí, precisa de ajuda?</div>
+        <img src="./Imersões _ Alura - Cursos online de tecnologia_files/luri-icon-cta.svg" alt="Luri">
+    </div>
+
+    <div class="chatbot-header">
+        <div class="chatbot-header__icon">
+            <img src="./Imersões _ Alura - Cursos online de tecnologia_files/luri-icon.svg" alt="Ícone da Luri">
+        </div>
+        <div class="chatbot-header__about">
+            <div class="chatbot-header__about_row">
+                <div class="chatbot-header__about-name">Luri</div>
+            </div>
+            <div class="chatbot-header__about-sub">Tem dúvidas sobre Luri? <a href="https://cursos.alura.com.br/imersoes/aulas/%7B0%7D" target="_blank">Consulte nosso FAQ.</a></div>
+        </div>
+        <button class="chatbot-header__close">
+            <img src="./Imersões _ Alura - Cursos online de tecnologia_files/close.svg" alt="Fechar">
+        </button>
+    </div>
+
+    <div class="suggestion-main-container">
+        <div class="suggestion-luri-presentation">
+            <img src="./Imersões _ Alura - Cursos online de tecnologia_files/luri-icon.svg" alt="Ícone da Luri">
+            <p>Oi, eu sou a Luri :) Estou aqui para te ajudar caso tenha alguma dúvida no conteúdo da aula.</p>
+        </div>
+        <div class="chatbot-footer__questions">
+            
+                <button class="chatbot-footer__questions-item">Sugira um questionário a partir da aula</button>
+            
+                <button class="chatbot-footer__questions-item">Sugira um exercício a partir da aula</button>
+            
+        </div>
+    </div>
+
+    <div class="chatbot-body style-scroll"></div>
+    <div class="spotlight-large"></div>
+
+    <div class="chatbot-footer">
+        <div class="chatbot-footer__actions">
+            <button class="chatbot-footer__actions-btn chatbot-footer__actions-clean-conversation">Limpar conversa</button>
+        </div>
+
+        <div class="chatbot-footer__send-area">
+            <div class="chatbot-footer__send-area-input">
+                <textarea class="chatbot-footer__send-area-content style-scroll" rows="1" placeholder="Escreva sua mensagem..."></textarea>
+            </div>
+            <button class="chatbot-footer__send-area-btn">
+                <img src="./Imersões _ Alura - Cursos online de tecnologia_files/icon-send.svg" alt="Enviar">
+            </button>
+        </div>
+        <div class="chatbot-footer__messages">
+            <div class="chatbot-footer__feedback">
+                <a href="https://tally.so/r/waeWvB" target="_blank">Enviar feedback</a>
+            </div>
+            <a href="https://cursos.alura.com.br/chatbot/conversations?courseCode=">Histórico de conversas</a>
+        </div>
+
+    </div>
+
+    <div class="chatbot-resizer"></div>
+</aside>
+    
+
+</main>
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+			<footer class="footer container">
+				<a href="https://cursos.alura.com.br/dashboard" class="footer-logo">
+					
+
+
+
+
+
+    
+        
+        <img class="header-logo header-logo-alura" src="./Imersões _ Alura - Cursos online de tecnologia_files/logo-alura.svg" alt="Logo da alura">
+    
+    
+
+
+				</a>
+
+                <ul class="footer-menu">
+                    
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-item-link" href="https://www.alura.com.br/sobre" target="">Sobre a Alura</a>
+                        </li>
+                    
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-item-link" href="https://www.alura.com.br/contato/" target="_blank">Dúvidas frequentes</a>
+                        </li>
+                    
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-item-link" href="https://docs.google.com/forms/d/e/1FAIpQLScwKyaSvuFXK9SmMJoLPuYAS2qD_XAAnZPxMZij9qVeflbhBg/viewform" target="_blank">Sugira um curso</a>
+                        </li>
+                    
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-item-link" href="https://github.com/caelum/alura-funcionalidades" target="_blank">Sugira uma funcionalidade</a>
+                        </li>
+                    
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-item-link" href="https://www.alura.com.br/artigos" target="_blank">Blog da Alura</a>
+                        </li>
+                    
+                    
+                        <li class="footer-menu-item">
+                            <a class="footer-menu-item-link" href="https://discord.com/oauth2/authorize?client_id=1278070632013238334&amp;response_type=code&amp;redirect_uri=https%3A%2F%2Fcursos.alura.com.br%2Fdiscord%2Fcallback&amp;scope=email+identify+guilds.join" target="_blank">
+                                Discord Alura
+                            </a>
+                        </li>
+                    
+                    <div class="links-fiap">
+                        
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-item-link" href="https://www.fiap.com.br/graduacao/?utm_source=plataforma-alura&amp;utm_medium=referral&amp;utm_campaign=BR_footer-plataforma&amp;utm_id=&amp;utm_term=&amp;utm_content=&amp;__hstc=164960864.0a6ffd8c390b7dcb13c6a48d82127ed5.1731949842072.1732367261286.1732387824032.21&amp;__hssc=164960864.1.1732387824032&amp;__hsfp=2926623495" target="_blank">Graduação</a>
+                            </li>
+                        
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-item-link" href="https://postech.fiap.com.br/?utm_source=plataforma-alura&amp;utm_medium=referral&amp;utm_campaign=BR_footer-plataforma&amp;utm_id=&amp;utm_term=&amp;utm_content=&amp;__hstc=164960864.0a6ffd8c390b7dcb13c6a48d82127ed5.1731949842072.1732367261286.1732387824032.21&amp;__hssc=164960864.1.1732387824032&amp;__hsfp=2926623495" target="_blank">Pós-Graduação</a>
+                            </li>
+                        
+                            <li class="footer-menu-item">
+                                <a class="footer-menu-item-link" href="https://www.fiap.com.br/mba?utm_source=plataforma-alura&amp;utm_medium=referral&amp;utm_campaign=BR_footer-plataforma&amp;utm_id=&amp;utm_term=&amp;utm_content=&amp;__hstc=164960864.0a6ffd8c390b7dcb13c6a48d82127ed5.1731949842072.1732367261286.1732387824032.21&amp;__hssc=164960864.1.1732387824032&amp;__hsfp=2926623495" target="_blank">MBA</a>
+                            </li>
+                        
+                    </div>
+                </ul>
+
+				<section role="presentation" class="footer-footerGroup">
+					
+						<div class="footer-links">
+							<h2 class="footer-links-title">Acompanhe-nos</h2>
+							<ul role="presentation" class="footer-socialMedia">
+								
+									<li class="footer-socialMedia-item">
+										<a class="footer-socialMedia-item-link" href="https://www.youtube.com/user/aluracursosonline" target="_blank" title="Youtube da Alura">
+											<svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-youtube">
+												<use xlink:href="/assets/images/icons-redes-hipster.svg#icon-footer-youtube"></use>
+											</svg>
+										</a>
+									</li>
+								
+									<li class="footer-socialMedia-item">
+										<a class="footer-socialMedia-item-link" href="https://www.facebook.com/AluraCursosOnline/" target="_blank" title="Facebook da Alura">
+											<svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-facebook">
+												<use xlink:href="/assets/images/icons-redes-hipster.svg#icon-footer-facebook"></use>
+											</svg>
+										</a>
+									</li>
+								
+									<li class="footer-socialMedia-item">
+										<a class="footer-socialMedia-item-link" href="https://twitter.com/aluraonline" target="_blank" title="Twitter da Alura">
+											<svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-twitter">
+												<use xlink:href="/assets/images/icons-redes-hipster.svg#icon-footer-twitter"></use>
+											</svg>
+										</a>
+									</li>
+								
+									<li class="footer-socialMedia-item">
+										<a class="footer-socialMedia-item-link" href="http://hipsters.tech/" target="_blank" title="Podcast Hipsters Ponto Tech">
+											<svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-hipsters">
+												<use xlink:href="/assets/images/icons-redes-hipster.svg#icon-footer-hipsters"></use>
+											</svg>
+										</a>
+									</li>
+								
+									<li class="footer-socialMedia-item">
+										<a class="footer-socialMedia-item-link" href="https://instagram.com/aluraonline" target="_blank" title="Instagram da Alura">
+											<svg class="footer-socialMedia-item-icon footer-socialMedia-list-item-instagram">
+												<use xlink:href="/assets/images/icons-redes-hipster.svg#icon-footer-instagram"></use>
+											</svg>
+										</a>
+									</li>
+								
+							</ul>
+						</div>
+					
+					
+						<div class="footer-links">
+							<h2 class="footer-links-title">Apps</h2>
+							<ul class="footer-hotLinks-menu footer-hotLinks-mobile">
+								
+									<li class="footer-hotLinks-item">
+										<a class="footer-hotLinks-item-link" href="https://play.google.com/store/apps/details?id=br.com.alura.mobi&amp;hl=pt_BR" target="_blank" title="Google Play Store">
+											<svg class="footer-hotLinks-item-icon footer-hotLinks-menu-item-mobile">
+												<use xlink:href="/assets/images/icons-mobile.svg#icon-footer-googlePlay"></use>
+											</svg>
+										</a>
+									</li>
+								
+									<li class="footer-hotLinks-item">
+										<a class="footer-hotLinks-item-link" href="https://itunes.apple.com/br/app/alura-cursos-online/id1225776635" target="_blank" title="Apple App Store">
+											<svg class="footer-hotLinks-item-icon footer-hotLinks-menu-item-mobile">
+												<use xlink:href="/assets/images/icons-mobile.svg#icon-footer-appStore"></use>
+											</svg>
+										</a>
+									</li>
+								
+							</ul>
+						</div>
+					
+				</section>
+			</footer>
+		
+	
+
+
+
+
+
+
+
+
+
+	
+	<!-- Hotjar Tracking Code for https://cursos.alura.com.br and https://bootcamps.alura.com.br -->
+	<script>
+		(function(h,o,t,j,a,r){
+			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+			h._hjSettings={hjid:1638253,hjsv:6};
+			a=o.getElementsByTagName('head')[0];
+			r=o.createElement('script');r.async=1;
+			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+			a.appendChild(r);
+		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	</script>
+
+    
+
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/jquery-3.6.0.min.7c14a783.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/sectionMenu.2bb600e2.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/buttonToggle.41524be9.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/caret.2e5c0c9d.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/purify.min.bd253e08.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/highlight.min.9b99da81.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/highlight.init.5870d8cf.js.download" async=""></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/search.5992338a.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/submitChatbotSearch.87eb88e6.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/news.4f082bd3.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/categoryExplorerCarousel.7e7489f7.js.download" async=""></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/populateGrid.41971c83.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/makeHeaderPoints.ed06bad3.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/preventsMultipleInteractions.19502e19.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/assessment.78d1fb98.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/login-form.5e8535bf.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/menuToggle.306a030c.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/headerToggle.b4e7c418.js.download" async=""></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/emptyMenuVerifier.eb84313c.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/responsiveHeaderToggle.5cc69803.js.download" async=""></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/Bookmark.26673b03.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/aria.a82b16ad.js.download" async=""></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/ExtraContentProgressRequest.7f84629c.js.download"></script>
+
+
+
+
+	
+	
+		
+	
+
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/audioPlayer.879237fd.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/Countdown.ed0ca300.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/LearningContentMarkWatched.8554af35.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/licenseAgreement.a56b6b8f.js.download"></script>
+
+<script>
+	
+	
+	let bookmark = new Bookmark();
+	bookmark.setMessages("Exibir no meu dashboard","Deixar de exibir no dashboard");
+	bookmark.refreshListener();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="./Imersões _ Alura - Cursos online de tecnologia_files/uploadImages.7c1a29db.css" rel="stylesheet">
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/UploadProgress.14749111.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/ImagesClient.b358c789.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/marked.min.c69e14e8.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/enableForumButtons.1293253c.js.download"></script>
+
+<script>
+    var IMAGE_UPLOAD_MESSAGES = {
+        imageUploadMessageInit: `Anexe arquivos arrastando e soltando`,
+        imageUploadMessageDragEnter: `Solte a imagem para fazer o upload`,
+        imageUploadMessageDrop: `Enviando a imagem #images_names#`,
+        imageUploadMessageProgress: `Enviando a imagem #images_names#: #progress#%`,
+        imageUploadMessageUploaded: `Imagem enviada com sucesso!`,
+        imageUploadMessageSizeUnits: `MB`,
+        imageUploadMessageTag: `![Insira aqui a descrição dessa imagem para ajudar na acessibilidade](#url#) `
+    }
+</script>
+
+
+    
+        <link href="./Imersões _ Alura - Cursos online de tecnologia_files/hackeditor.min.fcf421a7.css" rel="stylesheet">
+        <link href="./Imersões _ Alura - Cursos online de tecnologia_files/hackeditor.custom.e0057fb6.css" rel="stylesheet">
+        <link href="./Imersões _ Alura - Cursos online de tecnologia_files/github.754087c4.css" rel="stylesheet">
+
+        <script src="./Imersões _ Alura - Cursos online de tecnologia_files/hackeditor.min.4c55d65b.js.download"></script>
+        <script src="./Imersões _ Alura - Cursos online de tecnologia_files/hackeditor.custom.b88c034d.js.download"></script>
+        <script src="./Imersões _ Alura - Cursos online de tecnologia_files/highlight.min.9b99da81.js.download"></script>
+        <script>
+            const setupEditorsOnPage = (e) => {
+                const toolbarActionsHints = {
+                    toggleHeadingActionHint: `Título`,
+                    toggleBoldActionHint: `Negrito`,
+                    toggleItalicActionHint: `Itálico`,
+                    toggleOrderedListActionHint: `Lista ordenada`,
+                    toggleUnorderedListActionHint: `Lista não ordenada`,
+                    togglePreviewActionHint: `Pré-visualizar`,
+                    drawTableActionHint: `Inserir Tabela`,
+                    drawCodeActionHint: `Inserir bloco de código`,
+                    drawLinkActionHint: `Inserir Link`,
+                    drawImageActionHint: `Inserir Imagem`,
+                    drawUploadedImageActionHint: `Upload de imagem`,
+                    undoActionHint: `Desfazer`,
+                    redoActionHint: `Refazer`
+                }
+
+                const imageUploadErrors = {
+                    imageErrorLimit: `Você só pode inserir 5 imagens por vez!`,
+                    imageFileNotAllowed: `O arquivo filename não é permitido, apenas imagens!`,
+                    imageVeryLarge: `O arquivo filename é maior que o limite de 2 MB.`,
+                    imageMaliciousFile: `O arquivo filename contém conteúdo malicioso.`
+                }
+
+                window.editors = window.editors || [];
+
+                const editorsElements = window.editors.map(ed => ed.element.id);
+
+                const textAreaEditors = Array.from(document.querySelectorAll('.hackeditor > textarea'));
+                textAreaEditors
+                    .filter(e => e.closest('.taskForms') == null)
+                    .filter(e => editorsElements.length == 0 ? true : !editorsElements.includes(e.id))
+                    .forEach(editorTextArea => {
+                        const editor = setupHackEditor({
+                            editorOptions: {
+                                element: editorTextArea,
+                                initialValue: editorTextArea.innerText,
+                                syncPreview: true,
+                                maxHeight: "300px",
+                                toolbarActionsHints,
+                                imageUploadMessages: IMAGE_UPLOAD_MESSAGES,
+                                imageUploadErrors,
+                                imageUploadClient: new ImagesClient(
+                                    'https://www.gnarususercontent.com.br/images',
+                                    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTY0NDM0MzQsImtleSI6IjdiMjcwMTliLWRlNDgtNGQyZi1iOTYyLTFkOWYyMzcyZjliNyJ9.ZBnDO5eAPNeO8zVrIZiYM0RiHiFkaQMkGR3jHKyltD0',
+                                    1,
+                                    22158
+                                ),
+                                allowImageUpload: editorTextArea.dataset.allowImageUpload
+                            },
+                            extensions: {
+                                DOMPurify,
+                                marked,
+                                hljs
+                            }
+                        });
+
+                        window.editors.push({
+                            instance: editor,
+                            element: editorTextArea,
+                        });
+
+                        enableForumButtons();
+                });
+            }
+
+            window.addEventListener('DOMContentLoaded', setupEditorsOnPage);
+            document.addEventListener('change', setupEditorsOnPage);
+        </script>
+    
+    
+
+
+
+    
+        <script src="./Imersões _ Alura - Cursos online de tecnologia_files/clipboard.min.af8ab365.js.download"></script>
+        <script src="./Imersões _ Alura - Cursos online de tecnologia_files/ChatbotUtils.4c6338e7.js.download"></script>
+        <script src="./Imersões _ Alura - Cursos online de tecnologia_files/ChatbotImmersion.3ea35779.js.download"></script>
+        <script>
+            new ChatbotImmersion({
+                codeAreaDefaultCopyMessage: "Copiar código",
+                codeAreaCopiedMessage: "Copiado!",
+                firstAssistantMessage: "Oi, eu sou a Luri :) Estou aqui para te ajudar caso tenha alguma dúvida no conteúdo da aula.",
+                upvoteIconAltMessage: "Ícone do polegar para cima, indicando que a resposta te ajudou",
+                downvoteIconAltMessage: "Ícone do polegar para baixo, indicando que a resposta não te ajudou",
+                copyIconAltMessage: "Copiar texto da Luri para área de transferêcia",
+                upvoteIconTooltipMessage: "Resposta boa",
+                downvoteIconTooltipMessage: "Resposta ruim",
+                copyIconTooltipMessage: "Copiar"
+            }).setupListeners();
+        </script>
+    
+    <script src="./Imersões _ Alura - Cursos online de tecnologia_files/iframe_api" async=""></script>
+    <script type="text/javascript" src="./Imersões _ Alura - Cursos online de tecnologia_files/progressClassYouTube.2b03ac13.js.download"></script>
+    <script src="./Imersões _ Alura - Cursos online de tecnologia_files/ImmersionClass.47787ea6.js.download"></script>
+
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/IframeChecker.05103d26.js.download"></script>
+<script src="./Imersões _ Alura - Cursos online de tecnologia_files/SendDataFromSearchToGA.16b75f13.js.download"></script>
+<script>
+	new SendDataFromSearchToGA();
+</script>
+
+<reclameaqui-extension-pin><section><template shadowrootmode="open"><style data-styled="active" data-styled-version="5.3.11"></style></template></section></reclameaqui-extension-pin>
+<script id="hs-script-loader" text="" charset="" type="text/javascript" src="./Imersões _ Alura - Cursos online de tecnologia_files/21748317(2).js.download"></script><iframe height="0" width="0" style="display: none; visibility: hidden;" data-gtm-yt-inspected-98449541_523="true" src="./Imersões _ Alura - Cursos online de tecnologia_files/saved_resource.html"></iframe><script type="text/javascript" id="" charset="">(function(a,b,c,d){a[c]=a[c]||[];a[c].push({eventType:"init",value:d,dc:"us"});a=b.getElementsByTagName("script")[0];b=b.createElement("script");b.async=!0;b.src="https://tags.creativecdn.com/OiIKV8DdRsC6DWlZuu25.js";a.parentNode.insertBefore(b,a)})(window,document,"rtbhEvents","OiIKV8DdRsC6DWlZuu25");</script><iframe id="_hjSafeContext_61415369" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./Imersões _ Alura - Cursos online de tecnologia_files/saved_resource(1).html" data-gtm-yt-inspected-98449541_523="true" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+
+<div class="go2933276541 go2369186930" id="hs-web-interactives-top-anchor"><div id="hs-interactives-modal-overlay" class="go1632949049"></div></div>
+<div class="go2933276541 go1348078617" id="hs-web-interactives-bottom-anchor"></div>
+<div id="hs-web-interactives-floating-container">
+  <div id="hs-web-interactives-floating-top-left-anchor" class="go2417249464 go613305155">
+  </div>
+  <div id="hs-web-interactives-floating-top-right-anchor" class="go2417249464 go471583506">
+  </div>
+  <div id="hs-web-interactives-floating-bottom-left-anchor" class="go2417249464 go3921366393">
+  </div>
+  <div id="hs-web-interactives-floating-bottom-right-anchor" class="go2417249464 go3967842156">
+  </div>
+</div>
+</body></html>

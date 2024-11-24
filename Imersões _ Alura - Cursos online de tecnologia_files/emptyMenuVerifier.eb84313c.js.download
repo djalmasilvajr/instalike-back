@@ -1,0 +1,1 @@
+"use strict";!function(){var t=$("#contentList");0===t.find("a").length&&t.parent().remove()}();

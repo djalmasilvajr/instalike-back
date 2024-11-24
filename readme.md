@@ -22,9 +22,14 @@ npm install mongodb
 
 3. https://www.abstractapi.com/
 
-4. Google AI Studio https://aistudio.google.com/
+4. Serviços Google
+4.1. Google AI Studio https://aistudio.google.com/
+4.2. Google Cloud  https://cloud.google.com/free?hl=pt_br 
+4.3. Recebimento dos créditos para uso no Google Cloud https://trygcp.dev/e/alura-5f107c-imersao-back-end 
+4.4. https://gemini.google.com/
 
-5. https://gemini.google.com/
+5. código fonte aulas
+5.1. aula1 - https://github.com/guilhermeonrails/backend-instabytes/tree/bebe680f2d059218f3256482d23f706df7a690fb 
 
 6. https://cursos.alura.com.br/imersoes/aulas/conectando-sua-api-ao-mongodb-estrutura-conexao-e-refatoracao-c142
 
@@ -65,7 +70,35 @@ PUT
 
 8. Exercícios propostos pela Luri (AI da Alura)
 
+8.1. criar uma nova rota em seu servidor que retorne um JSON com informações sobre um livro
 
+Claro! Que tal você criar uma nova rota em seu servidor que retorne um JSON com informações sobre um livro? Aqui estão os detalhes do exercício:
+Crie uma nova rota: Utilize o método app.get() para criar uma rota chamada /livro.
+Retorne um JSON: Quando essa rota for acessada, ela deve retornar um objeto JSON com as seguintes informações:
+Título do livro
+Autor do livro
+Ano de publicação
+Gênero
+
+Por exemplo, o JSON pode ser assim:
+                 
+                    
+                        json
+                        Copiar código
+                    
+                    
+                        {
+  "titulo": "O Senhor dos Anéis",
+  "autor": "J.R.R. Tolkien",
+  "ano": 1954,
+  "genero": "Fantasia"
+}
+                    
+                
+        
+Teste a rota: Após implementar, inicie seu servidor e acesse localhost:3000/livro no navegador para ver se o JSON é retornado corretamente.
+
+Esse exercício vai te ajudar a praticar a criação de rotas e o retorno de dados em formato JSON! Boa sorte!
 
 8.5. endpoint para deletar um post existente
 
@@ -79,3 +112,46 @@ Teste a funcionalidade utilizando o Postman, enviando uma requisição DELETE pa
 Esse exercício vai te ajudar a entender melhor como gerenciar a persistência de dados no seu projeto! Se precisar de ajuda, estou aqui!
 
 
+
+9. Aulas
+
+Acesse o Google Gemini aqui https://alura.tv/google-gemini
+Gere a sua API Key no Google AI Studo aqui. https://alura.tv/google-gemini-api
+Guia de Mergulho da Imersão Dev Back-End! https://grupoalura.notion.site/imersao-dev-back-end-guia-de-mergulho
+Acesse o Discord https://discord.gg/86zUvgfRjN
+Live 25/11 às 18h30 | Do Código ao Mercado: O Futuro da Sua Carreira em Tecnologia https://www.youtube.com/watch?v=clfwxY3Kfss
+Npm | dotenv https://www.npmjs.com/package/dotenv
+Documentação Google Cloud https://cloud.google.com/docs?hl=pt-br
+
+
+
+
+
+
+
+5a Aula
+
+Nesta última aula, vamos finalizar o projeto, colocando a lógica de armazenamento de imagens no servidor, integrando o Front-End do projeto e, fazendo o deploy do back-end na Google Cloud.
+
+Nesta aula, você vai:
+Fazer a lógica de armazenamento de imagens no servidor;
+Criar a rota PUT para atualização de post;
+Integrar com o Frontend;
+Integrar com a API do Gemini;
+Fazer o deploy do back-end na Google Cloud.
+
+Link do projeto:
+Repositório da aula 05 https://github.com/guilhermeonrails/5-Vb8nXmJ5Q7kZ
+Integração do Front-End com o Back-End https://github.com/alura-cursos/imersao-backend-gemini-2024-front/archive/refs/heads/main.zip
+Código pronto do serviço do Gemini https://raw.githubusercontent.com/guilhermeonrails/backend-instabytes/refs/heads/aula_5/src/services/geminiService.js
+Código Service .sh https://raw.githubusercontent.com/guilhermeonrails/backend-instabytes/refs/heads/aula_5/services.sh
+
+Aprofunde-se nos seguintes tópicos:
+
+O que é CORS - https://www.alura.com.br/artigos/como-resolver-erro-de-cross-origin-resource-sharing
+
+Subindo projeto para o GitHub - https://www.alura.com.br/artigos/o-que-e-git-github
+
+Escrevendo um README no seu GitHub https://www.alura.com.br/artigos/escrever-bom-readme
+
+Mostre a evolução do seu projeto para o mundo compartilhando no LinkedIn e Instagram! Marque a Alura (@AluraOnline) e o Google (@GoogleBrasil). Vamos adorar ver os seus projetos e acompanhar a sua evolução! Lembre-se de utilizar a hashtag #Imersao-Back-End-Google-Gemini para que o seu projeto alcance ainda mais pessoas.
